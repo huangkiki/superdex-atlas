@@ -498,6 +498,102 @@
     {
       "path": "uv.lock",
       "git_blob": "78d4ad3146cea1f965e48e70adf4d913c091a381"
+    },
+    {
+      "path": "superdex_lab/README.md",
+      "git_blob": "502a49de1168b33e5ad051f2f0ca88c1e231a324"
+    },
+    {
+      "path": "superdex_lab/apps/envs/run_with_gymnasium_vectorization.py",
+      "git_blob": "4c0846e6b0bfaf43f815f1fd680138fae7ffc952"
+    },
+    {
+      "path": "superdex_lab/apps/envs/sample_runner.py",
+      "git_blob": "3efef74a6d9439b6c7092b2e5787522ee9f31e44"
+    },
+    {
+      "path": "superdex_lab/apps/envs/utils/dataset.py",
+      "git_blob": "041b6b8dec91898411bb7f84a74ac57512a9b0f1"
+    },
+    {
+      "path": "superdex_lab/apps/rllib/checkpoint_policy.py",
+      "git_blob": "83e08fac985b6e48e1d8d326af40272250f81ebf"
+    },
+    {
+      "path": "superdex_lab/apps/rllib/train_samples.py",
+      "git_blob": "f56da089aa66c62cb7d3cb0feed3359805e53994"
+    },
+    {
+      "path": "superdex_lab/pyproject.toml",
+      "git_blob": "615629e1d1d1e3c6adbbca4eed49ec243eaa7a62"
+    },
+    {
+      "path": "superdex_lab/superdex/lab/gym/envs/benchmarks/cartpole_env.py",
+      "git_blob": "e5c8e8541180b8e286b932d979ae36dc203ec11d"
+    },
+    {
+      "path": "superdex_lab/superdex/lab/gym/envs/mochi_env.py",
+      "git_blob": "a3d0e563fc08e6ba47922a3e552829d86db520f2"
+    },
+    {
+      "path": "superdex_lab/superdex/lab/gym/envs/scene_manager.py",
+      "git_blob": "48ab13406fdc0f0790c1a0c54fa9a3b2f0ac5ad7"
+    },
+    {
+      "path": "superdex_lab/superdex/lab/gym/envs/types.py",
+      "git_blob": "21922eddfb13d9fe2eb973fed9c942cb5a45b82b"
+    },
+    {
+      "path": "superdex_lab/superdex/lab/gym/utils/mochi_helpers.py",
+      "git_blob": "70694f0a089df0a0befbf013ed59678b125f2f66"
+    },
+    {
+      "path": "superdex_lab/superdex/lab/gym/utils/train_cfg.py",
+      "git_blob": "96740091291c273b022a828ef36c507b8f9e00d5"
+    },
+    {
+      "path": "superdex_lab/superdex/lab/gym/utils/vector.py",
+      "git_blob": "a81bc24afc9e17aa98654a3ff540fac6dd33aacb"
+    },
+    {
+      "path": "superdex_lab/test/envs/test_scene_sharing.py",
+      "git_blob": "cd2c9fd0cac57b23fdacfdf0e32ac0119f287fa7"
+    },
+    {
+      "path": "superdex_lab/test/utils/test_vector.py",
+      "git_blob": "64e4eedb7db016010db0081998e8fa8b7930efe6"
+    },
+    {
+      "path": "superdex_physics/examples/example_cross_thread_capture_restore.py",
+      "git_blob": "136d01fd8363fd9cd573e3d810699a7601645b56"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/linear_algebra/cuda/cuda_api.h",
+      "git_blob": "b9fabda725820be6f1fa752d13a4c265fc9e68cc"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/src/linear_algebra/cuda/cuda_api.cpp",
+      "git_blob": "0c8b07db03137797e2ce3a35dc05098dc1cfde95"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/src/linear_algebra/cuda/cuda_csr_matrix.cpp",
+      "git_blob": "728737e14d3d8e7f9e8d4e97d2387e90c943ec9e"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/src/linear_algebra/cuda/cuda_pcg.cpp",
+      "git_blob": "0a857cb6aa0c876f016b77f2d7b74d5a695ba012"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/pybind/stubs/public/mochi_physics/diffsim/__init__.pyi",
+      "git_blob": "abbff69113eeccabf350ed4335e9159b8c598652"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_scene_recorder.cpp",
+      "git_blob": "7e3b0465abacad6aa0d5102564c767463742da4e"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_scene_recorder.h",
+      "git_blob": "da64e25124f637c1a0377c74b636afdc03fa2a73"
     }
   ],
   "external_sources": [
@@ -537,6 +633,42 @@
         {
           "path": "src/screenshot.cpp",
           "git_blob": "e65ff92e92c481c29367cd7a336651a640137e4b"
+        }
+      ]
+    },
+    {
+      "upstream": "Farama-Foundation/Gymnasium",
+      "version": "v1.3.0",
+      "commit": "53bf3e9a884783eb72ad3fc8b15780914c97c3e1",
+      "scope": "Reference dependency matching the pinned SuperDex uv.lock; seed, space and vector/autoreset source semantics only, not installed-package or native runtime validation.",
+      "files": [
+        {
+          "path": "LICENSE",
+          "git_blob": "ac10bf443756cdc02724943ac09021092ce9e737"
+        },
+        {
+          "path": "gymnasium/core.py",
+          "git_blob": "a81eb32ac7679a295e71488545dba9b011690af1"
+        },
+        {
+          "path": "gymnasium/spaces/dict.py",
+          "git_blob": "f68e4eaf751ade6814a21a3ac6356d99b78af515"
+        },
+        {
+          "path": "gymnasium/spaces/utils.py",
+          "git_blob": "e469106ad4e4fbdb2fe9987a18d60b90025e6e61"
+        },
+        {
+          "path": "gymnasium/vector/async_vector_env.py",
+          "git_blob": "7d231fa8c8f3988422050aadc0962cd09b959c8a"
+        },
+        {
+          "path": "gymnasium/vector/sync_vector_env.py",
+          "git_blob": "312735120cd73e51b2e1ab700f1dc3c09c1d4f2e"
+        },
+        {
+          "path": "gymnasium/vector/vector_env.py",
+          "git_blob": "d3e29f20399ab50d41950f9436d15d7b33b56171"
         }
       ]
     }

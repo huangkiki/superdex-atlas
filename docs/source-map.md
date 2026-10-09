@@ -162,3 +162,46 @@
 外部参考依赖另固定 `nmwsharp/polyscope-py@8aa43f5d65d9ef54a415451c7caeebb4c0b6fde7`（v2.5.0，与上述 lock 版本对应）：[Python 截图封装](https://github.com/nmwsharp/polyscope-py/blob/8aa43f5d65d9ef54a415451c7caeebb4c0b6fde7/src/polyscope/core.py)、[C++ binding](https://github.com/nmwsharp/polyscope-py/blob/8aa43f5d65d9ef54a415451c7caeebb4c0b6fde7/src/cpp/core.cpp)、[MIT license](https://github.com/nmwsharp/polyscope-py/blob/8aa43f5d65d9ef54a415451c7caeebb4c0b6fde7/LICENSE)。确认 RGBA shape、byte dtype 与默认翻转；不证明本机安装包或设备输出。`sources.json.external_sources` 独立记录 path/blob；没有复制第三方代码进本仓。
 
 继续沿 Polyscope Python 的 [.gitmodules](https://github.com/nmwsharp/polyscope-py/blob/8aa43f5d65d9ef54a415451c7caeebb4c0b6fde7/.gitmodules) 与 `deps/polyscope` gitlink 固定 core `b1f5ae82488b82d91a61d7d8c81882989216056d`：[原生截图契约](https://github.com/nmwsharp/polyscope/blob/b1f5ae82488b82d91a61d7d8c81882989216056d/include/polyscope/screenshot.h)、[绘制/读回实现](https://github.com/nmwsharp/polyscope/blob/b1f5ae82488b82d91a61d7d8c81882989216056d/src/screenshot.cpp)。其 RGBA 字节顺序和“截图先绘制”的语义同样来自固定源文件，两个外部仓各自收录 manifest。
+
+## E5 批量、学习与数据追踪
+
+对应[专题](batch-learning-data.md)与[验收](validation-e5.md)。下表为新增的固定 SuperDex 源文件；复用的 Physics API、Scene.step、linear_solver.h 与 uv.lock 见前表。原生例子/测试/学习脚本均未执行。
+
+| 源码 | 阅读目的 |
+|---|---|
+| [superdex_lab/README.md](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/README.md) | Lab职责与资产不随wheel打包 |
+| [superdex_lab/apps/envs/run_with_gymnasium_vectorization.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/apps/envs/run_with_gymnasium_vectorization.py) | 官方原生vector例子与按逻辑环境传seed，未运行 |
+| [superdex_lab/apps/envs/sample_runner.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/apps/envs/sample_runner.py) | 交互/策略/可选视频样例，不是完整回放契约 |
+| [superdex_lab/apps/envs/utils/dataset.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/apps/envs/utils/dataset.py) | LeRobot/Torch应用依赖、固定Actor ID与task-specific HDF解析 |
+| [superdex_lab/apps/rllib/checkpoint_policy.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/apps/rllib/checkpoint_policy.py) | module/connector恢复、normalizer/动作变换与降级分支 |
+| [superdex_lab/apps/rllib/train_samples.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/apps/rllib/train_samples.py) | 环境配置与recipe分离、RLlib外部学习边界 |
+| [superdex_lab/pyproject.toml](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/pyproject.toml) | Lab/Python/核心依赖身份 |
+| [superdex_lab/superdex/lab/gym/envs/benchmarks/cartpole_env.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/superdex/lab/gym/envs/benchmarks/cartpole_env.py) | 字段单位、动作缩放、奖励、终止/截断与共享key |
+| [superdex_lab/superdex/lab/gym/envs/mochi_env.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/superdex/lab/gym/envs/mochi_env.py) | reset/dummy step、控制子步、缓存、共享状态、render/close 与 profiler |
+| [superdex_lab/superdex/lab/gym/envs/scene_manager.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/superdex/lab/gym/envs/scene_manager.py) | 共享命名键、refcount、cleanup失败与原生资源释放 |
+| [superdex_lab/superdex/lab/gym/envs/types.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/superdex/lab/gym/envs/types.py) | 原生Lab结构化/扁平返回契约 |
+| [superdex_lab/superdex/lab/gym/utils/mochi_helpers.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/superdex/lab/gym/utils/mochi_helpers.py) | 原生缓冲到NumPy copy、资产和Bot生命周期 |
+| [superdex_lab/superdex/lab/gym/utils/train_cfg.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/superdex/lab/gym/utils/train_cfg.py) | RLlib应用参数与SAC实验性边界 |
+| [superdex_lab/superdex/lab/gym/utils/vector.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/superdex/lab/gym/utils/vector.py) | 两级vector、spawn、seed切片、Box reshape、info masks |
+| [superdex_lab/test/envs/test_scene_sharing.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/test/envs/test_scene_sharing.py) | 共享/独立、顺序step及创建者先关闭测试意图，未运行 |
+| [superdex_lab/test/utils/test_vector.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_lab/test/utils/test_vector.py) | 形状/seed长度/reset-mask/spawn测试意图，未运行 |
+| [superdex_physics/examples/example_cross_thread_capture_restore.py](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_physics/examples/example_cross_thread_capture_restore.py) | 各线程独立Scene及复制字节状态，未运行 |
+| [superdex_physics/libraries/mochi/mochi_core/include/mochi_core/linear_algebra/cuda/cuda_api.h](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_physics/libraries/mochi/mochi_core/include/mochi_core/linear_algebra/cuda/cuda_api.h) | 原生CUDA copy/分配接口 |
+| [superdex_physics/libraries/mochi/mochi_core/src/linear_algebra/cuda/cuda_api.cpp](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_physics/libraries/mochi/mochi_core/src/linear_algebra/cuda/cuda_api.cpp) | cudaMemcpy及线程局部CUDA handle |
+| [superdex_physics/libraries/mochi/mochi_core/src/linear_algebra/cuda/cuda_csr_matrix.cpp](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_physics/libraries/mochi/mochi_core/src/linear_algebra/cuda/cuda_csr_matrix.cpp) | CSR设备描述符与float/double类型 |
+| [superdex_physics/libraries/mochi/mochi_core/src/linear_algebra/cuda/cuda_pcg.cpp](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_physics/libraries/mochi/mochi_core/src/linear_algebra/cuda/cuda_pcg.cpp) | GPU线性子问题中的拷贝与同步 |
+| [superdex_physics/libraries/mochi/mochi_physics/pybind/stubs/public/mochi_physics/diffsim/__init__.pyi](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_physics/libraries/mochi/mochi_physics/pybind/stubs/public/mochi_physics/diffsim/__init__.pyi) | Physics diffsim逐步求导与兼容限制，未接成Gym autograd |
+| [superdex_physics/libraries/mochi/mochi_physics/src/mochi_scene_recorder.cpp](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_physics/libraries/mochi/mochi_physics/src/mochi_scene_recorder.cpp) | 事件、字段、post-step写入、重建信息缺口与写错误 |
+| [superdex_physics/libraries/mochi/mochi_physics/src/mochi_scene_recorder.h](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_physics/libraries/mochi/mochi_physics/src/mochi_scene_recorder.h) | 录制相对时间初值、错误状态及entry生命周期 |
+
+外部 Gymnasium 1.3.0 的 commit 单独固定，与本章原生核心身份分开；仅解释依赖契约。
+
+| 外部源码 | 阅读目的 |
+|---|---|
+| [LICENSE](https://github.com/Farama-Foundation/Gymnasium/blob/53bf3e9a884783eb72ad3fc8b15780914c97c3e1/LICENSE) | MIT 许可归属 |
+| [gymnasium/core.py](https://github.com/Farama-Foundation/Gymnasium/blob/53bf3e9a884783eb72ad3fc8b15780914c97c3e1/gymnasium/core.py) | Env reset RNG 与终止/截断契约 |
+| [gymnasium/spaces/dict.py](https://github.com/Farama-Foundation/Gymnasium/blob/53bf3e9a884783eb72ad3fc8b15780914c97c3e1/gymnasium/spaces/dict.py) | 普通mapping排序与space RNG |
+| [gymnasium/spaces/utils.py](https://github.com/Farama-Foundation/Gymnasium/blob/53bf3e9a884783eb72ad3fc8b15780914c97c3e1/gymnasium/spaces/utils.py) | flatten dtype/顺序/拷贝 |
+| [gymnasium/vector/async_vector_env.py](https://github.com/Farama-Foundation/Gymnasium/blob/53bf3e9a884783eb72ad3fc8b15780914c97c3e1/gymnasium/vector/async_vector_env.py) | 父进程dummy、spawn/共享CPU buffer、seed与等待 |
+| [gymnasium/vector/sync_vector_env.py](https://github.com/Farama-Foundation/Gymnasium/blob/53bf3e9a884783eb72ad3fc8b15780914c97c3e1/gymnasium/vector/sync_vector_env.py) | 内层串行、seed展开与三种autoreset |
+| [gymnasium/vector/vector_env.py](https://github.com/Farama-Foundation/Gymnasium/blob/53bf3e9a884783eb72ad3fc8b15780914c97c3e1/gymnasium/vector/vector_env.py) | VectorEnv/VectorWrapper与info有效掩码 |
