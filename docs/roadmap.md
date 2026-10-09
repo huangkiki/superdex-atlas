@@ -8,7 +8,7 @@
 | E1 | 建模、坐标、状态与时间专题 | E0 | [专题与源码核对已完成](modeling-state-time.md)；[运行未验收](validation-e1.md) |
 | E2 | 驱动、机器人与任务接口专题 | E1 | [专题与源码核对已完成](control-robotics.md)；[运行未验收](validation-e2.md) |
 | E3 | 接触、求解器与力观测源码专题 | E1 | [专题与源码核对已完成](contact-solvers-forces.md)；[运行未验收](validation-e3.md) |
-| E4 | 传感器、渲染与可视化专题 | E1 | 待开发 |
+| E4 | 传感器、渲染与可视化专题 | E1 | [专题与源码核对已完成](sensors-rendering.md)；[运行未验收](validation-e4.md) |
 | E5 | 批量、学习接口与数据专题 | E2、E4 | 待开发 |
 | E6 | 引擎特色、扩展与能力边界专题 | E3 | 待开发 |
 | E7 | 双路线课程审校与 DexLab 复用入口 | E2–E6 | 待开发 |
@@ -24,3 +24,5 @@ E1 交付后复盘：A1/A2 已形成可阅读专题，B0/B4 的状态/惯量与�
 E2 交付后复盘：A3/A5/A7 的接口、数学假设、限幅与任务调度已覆盖，保留实验性 IK/transmission 和公开 Actuator 注册边界。下一项优先 E3，从驱动力/约束目标进入接触、求解与实际力观测，随后 E4 补传感/渲染；E5 仍等待 E4，E6 仍等待 E3，E7 等 E3–E6。没有把模型 effort metadata 或 IK 可达判据当成实验验收。
 
 E3 交付后复盘：A4/B1–B5 的接触、积分、求解和力观测已形成固定源码专题，B0 增补广义力、惯性及约束装配。材料几何平均的静态例外、STOPPED/DIVERGED、query 时点均有分支证据，未用于补写 DexLab 历史配置。下一项优先 E4，随后 E5 的 E2/E4 依赖才齐备；E6 的 E3 先修已具备，但可微/特色扩展仍未完成。E7 仍等待剩余专题。
+
+E4 交付后复盘：A6 已讲清 CameraSensor 元数据、Physics 查询与三条图像宿主路径。Mochi RGBA8、Polyscope 实际四通道、UnrealCV 客户端/服务端边界、延迟/帧时点和资源生命周期均有固定源码证据；公开 depth/segmentation/tactile 缺口没有填入虚构 API。E5 的 E2/E4 知识先修已齐备，待本项实际合入后可优先推进批量/学习/数据专题；E6 同样已有 E3 先修，E7 仍待 E5/E6。未启动任何 native import、渲染或仿真。

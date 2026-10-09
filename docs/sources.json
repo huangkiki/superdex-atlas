@@ -358,6 +358,187 @@
     {
       "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_step.cpp",
       "git_blob": "fa300d5351d9b75c2998bb4da0f072ad1a00a049"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/geometry/ray.h",
+      "git_blob": "e2675daa468907b54bf48a3c693d7719f45a88d0"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/src/geometry/ray.cpp",
+      "git_blob": "3b4ce74b23fa0d6f9f9a6f3cdf2234f92440a007"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_renderer/CMakeLists.txt",
+      "git_blob": "a0a6e5875bf037b255388985d7a93a5110dedd81"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_renderer/include/mochi_renderer/camera.h",
+      "git_blob": "6ac5f41a574060b5d9cf71fbfcf528e65f36f97f"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_renderer/include/mochi_renderer/mochi_renderer.h",
+      "git_blob": "b35f98b44711e1c49464411efe63e43292b0891a"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_renderer/include/mochi_renderer/render_space.h",
+      "git_blob": "bd93ff7f3fde851921dd0274cc28140b74ff48b0"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_renderer/include/mochi_renderer/types.h",
+      "git_blob": "7b2ec874477626550d759770f139dc78b96e1362"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_renderer/materials/Distortion.mat",
+      "git_blob": "7c6d33fd8f013670a68e90108da05b410d1cf269"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_renderer/src/camera.cpp",
+      "git_blob": "ce7367fc76daa4e574f62487b8079740fb59ccd7"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_renderer/src/mochi_renderer.cpp",
+      "git_blob": "07f6f487b6fad4c382363248f092829a208a3582"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_renderer/src/offscreen_render_target.cpp",
+      "git_blob": "c792f6b4483adeb3a5f3644bbc8fdb4b90be0c16"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_renderer/src/view_settings.cpp",
+      "git_blob": "f52496e0fc20da93132ff9a7abdffbbc262782c6"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_renderer/test/mochi_renderer_headless_test.cpp",
+      "git_blob": "d9aed48594e3372b18762db03206ef260dd50fb7"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/third_party/filament/CMakeLists.txt",
+      "git_blob": "e6e6bb40a543b8f8fe7ae5a06ab2ae9755c86488"
+    },
+    {
+      "path": "superdex_python/pyproject.toml",
+      "git_blob": "2be7bcf278022e88a8b09c01ea11568e38b1072b"
+    },
+    {
+      "path": "superdex_python/superdex/physics/debugger.py",
+      "git_blob": "9f4c1d6b86cf8071c4151a1ea7df0a82bfb0f592"
+    },
+    {
+      "path": "superdex_python/superdex/physics/viewer/backend.py",
+      "git_blob": "db53f163c4ab63f3dfd01a9b1cbc9d107c2488ca"
+    },
+    {
+      "path": "superdex_python/superdex/physics/viewer/mochi_renderer/mochi_renderer_client.py",
+      "git_blob": "3b5413625514695acb7e8fe94e61535a32961be6"
+    },
+    {
+      "path": "superdex_python/superdex/physics/viewer/mochi_renderer/mochi_renderer_viewer.py",
+      "git_blob": "2417e48d224fcfdb8df692c6be41300e75e9c52b"
+    },
+    {
+      "path": "superdex_python/superdex/physics/viewer/mochi_renderer/mochi_renderer_viewer_cfg.py",
+      "git_blob": "e16e4af69ec99f9ba92eed87a83f5b0e996746f8"
+    },
+    {
+      "path": "superdex_python/superdex/physics/viewer/unrealcv/unrealcv_client.py",
+      "git_blob": "c4aa005fc60c93639dcc04b865ddc6d6d81cc247"
+    },
+    {
+      "path": "superdex_python/superdex/physics/viewer/unrealcv/unrealcv_image.py",
+      "git_blob": "0337d7815b5529c0a89ab8ee9087b1d75b39e3a2"
+    },
+    {
+      "path": "superdex_python/superdex/physics/viewer/unrealcv/unrealcv_viewer.py",
+      "git_blob": "4193b28c1612b8f9131a46023073d89c91c24466"
+    },
+    {
+      "path": "superdex_python/superdex/physics/viewer/unrealcv/unrealcv_viewer_cfg.py",
+      "git_blob": "c293f9ba8f1220f69346e813cf3d54f7e76769be"
+    },
+    {
+      "path": "superdex_python/superdex/physics/viewer/viewer.py",
+      "git_blob": "b99d69a7d2aa1b3972957850f84afaf19c41d5a5"
+    },
+    {
+      "path": "superdex_python/superdex/physics/viewer/viewer_cfg.py",
+      "git_blob": "f7f05a9b53ef625c0c6e934a5f961a9d1bde472c"
+    },
+    {
+      "path": "superdex_robotics/include/superdex_robotics/sensors/camera_sensor.h",
+      "git_blob": "a66d2469fa618a0a0d4d436d457654ca18da75cd"
+    },
+    {
+      "path": "superdex_robotics/include/superdex_robotics/sensors/sensor_base.h",
+      "git_blob": "ea8f26519730e5b2a022a6283f6e52324372e613"
+    },
+    {
+      "path": "superdex_robotics/src/sensors/sensor_base.cpp",
+      "git_blob": "4ab3784f468f8375c2f3e6ae7013b3993d72d293"
+    },
+    {
+      "path": "superdex_studio/README.md",
+      "git_blob": "b91e730dd9eb296aa339fd5c4daceaf7d30b3538"
+    },
+    {
+      "path": "superdex_studio/run_studio_linux_headless.sh",
+      "git_blob": "ceb4fb9d2a4854b7b5d5dafa09e974d3af6f1424"
+    },
+    {
+      "path": "superdex_studio/src/rendering/renderer.cpp",
+      "git_blob": "571cc71374d56852ca46607221b0d2175515ed62"
+    },
+    {
+      "path": "superdex_studio/src/rendering/scene_stage.cpp",
+      "git_blob": "7295404f9fba0758e5da01aa3f800c99b33c7e2f"
+    },
+    {
+      "path": "superdex_studio/src/rendering/viewport.cpp",
+      "git_blob": "f6015ca02bc65a9741063a5a2a901bf04876b228"
+    },
+    {
+      "path": "uv.lock",
+      "git_blob": "78d4ad3146cea1f965e48e70adf4d913c091a381"
+    }
+  ],
+  "external_sources": [
+    {
+      "upstream": "nmwsharp/polyscope-py",
+      "version": "v2.5.0",
+      "commit": "8aa43f5d65d9ef54a415451c7caeebb4c0b6fde7",
+      "scope": "Reference dependency matching the SuperDex uv.lock package version; source identity only, not verification of installed wheel or rendering.",
+      "files": [
+        {
+          "path": "src/polyscope/core.py",
+          "git_blob": "e9cd24119b4ff4984eb174f2d57228a942db5d07"
+        },
+        {
+          "path": "src/cpp/core.cpp",
+          "git_blob": "dc3b62deebf7ee17cf04809781fe6eb8bf334209"
+        },
+        {
+          "path": "LICENSE",
+          "git_blob": "52bfff3fad179b4b6f1b82385624a977362d4fe9"
+        },
+        {
+          "path": ".gitmodules",
+          "git_blob": "2038fea210272762ef2b6d45636bfe2295bc228f"
+        }
+      ]
+    },
+    {
+      "upstream": "nmwsharp/polyscope",
+      "commit": "b1f5ae82488b82d91a61d7d8c81882989216056d",
+      "scope": "Exact deps/polyscope gitlink of the pinned polyscope-py v2.5.0 reference; screenshot channel and readback contract, not runtime qualification.",
+      "files": [
+        {
+          "path": "include/polyscope/screenshot.h",
+          "git_blob": "8a4e14137ea8cc14778d263511f7881f60b0b946"
+        },
+        {
+          "path": "src/screenshot.cpp",
+          "git_blob": "e65ff92e92c481c29367cd7a336651a640137e4b"
+        }
+      ]
     }
   ]
 }
