@@ -142,6 +142,114 @@
     {
       "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/utils/rigid_body_utils.h",
       "git_blob": "d9dafe9d03334896ecad40542567cda742309573"
+    },
+    {
+      "path": "superdex_robotics/include/superdex_robotics/superdex_robotics.h",
+      "git_blob": "35fd3098e1c1063910874aefdc610ef613d39a37"
+    },
+    {
+      "path": "superdex_robotics/src/bot_impl.cpp",
+      "git_blob": "b7625873c22c93b7d978257225a96d312a7674e6"
+    },
+    {
+      "path": "superdex_robotics/src/controllers/controller_basic_osc_pd.cpp",
+      "git_blob": "9638e4fbd90560b5b87fba917c6d46a8c3329bc6"
+    },
+    {
+      "path": "superdex_robotics/src/controllers/controller_mochi_articulated_pose.cpp",
+      "git_blob": "5fae236f9ad2d63cb2a047477eca11bbacb3e1b9"
+    },
+    {
+      "path": "superdex_robotics/include/superdex_robotics/controllers/controller_basic_jsc_pd.h",
+      "git_blob": "0ffabbaa768de29b2d994f1a76b81e53711724c7"
+    },
+    {
+      "path": "superdex_robotics/include/superdex_robotics/controllers/controller_basic_osc_pd.h",
+      "git_blob": "394e9136949cb819d74e4054967b92dafec29fb1"
+    },
+    {
+      "path": "superdex_robotics/include/superdex_robotics/controllers/controller_mochi_articulated_pose.h",
+      "git_blob": "3d1fbf59003022c4ea857c6c13d63b23f95ff0b4"
+    },
+    {
+      "path": "superdex_robotics/include/superdex_robotics/controllers/controller_base.h",
+      "git_blob": "1439e81e2f292d08d0a8e5c0bb3d52dd9ce94d60"
+    },
+    {
+      "path": "superdex_robotics/include/superdex_robotics/actuators/actuator_base.h",
+      "git_blob": "6446c717717b051101cd8bf15ede7d3e7753d0bd"
+    },
+    {
+      "path": "superdex_robotics/src/actuators/actuator_base.cpp",
+      "git_blob": "fdb846ceb63114727a784a71ffd46f7792f86610"
+    },
+    {
+      "path": "superdex_robotics/examples/control/example_jsc_control.py",
+      "git_blob": "7442a5b8d79c1b2891c484525b49853681b6acce"
+    },
+    {
+      "path": "superdex_robotics/examples/control/example_ik_pose_control.py",
+      "git_blob": "118578d98db876ad978d7ec9ec5ad13e58f43021"
+    },
+    {
+      "path": "superdex_robotics/examples/control/example_osc_control.py",
+      "git_blob": "270627053f22fb6d0eaf7f74fd4d4e9a84ec26f9"
+    },
+    {
+      "path": "superdex_robotics/examples/advanced/example_custom_components.py",
+      "git_blob": "59da845346aff1df91a4c3dfb7b935098452e108"
+    },
+    {
+      "path": "superdex_robotics/src/core/context.cpp",
+      "git_blob": "f53279b013383b8dc23f6ce8a3d15c2a6f7178c9"
+    },
+    {
+      "path": "superdex_robotics/src/mochi_bots.cpp",
+      "git_blob": "2665d1a9a997997d63338ba809befc833355d99a"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_articulated_body.cpp",
+      "git_blob": "0e2b6581d3a211bc577960132ace201d7720c5fb"
+    },
+    {
+      "path": "superdex_robotics/pybind/stubs/public/superdex_robotics/bots/__init__.pyi",
+      "git_blob": "33fa10759f67ad9288a6edd1f86826f76c8e8a3b"
+    },
+    {
+      "path": "superdex_robotics/include/superdex_robotics/utils/bot_utils.h",
+      "git_blob": "ce136f466d2f3e2d777b9a93454759cf42f4fbc8"
+    },
+    {
+      "path": "superdex_robotics/src/utils/bot_utils.cpp",
+      "git_blob": "a3f3335c0b93ba4976ad45b7d8360304529ca9f1"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_ik.cpp",
+      "git_blob": "9041219c1843b7efe917070982c0e36f6ea4ea43"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/include/mochi_physics/mochi_physics_experimental.h",
+      "git_blob": "39d47b921d1d32e585ec120a84ea708adfdd03ad"
+    },
+    {
+      "path": "superdex_robotics/superdex/robotics/__init__.py",
+      "git_blob": "f800dc82a7b2e2a8bdef3075c910def7cee2af91"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_transmission.cpp",
+      "git_blob": "a5796f902bfd76ccba81fd843a407281790a9b53"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_articulated_body.h",
+      "git_blob": "5ba2a98f432244ec2fe83e1437f1389fcb39bae7"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/pybind/src/generated/mochi_physics_pybind_experimental.generated.cpp",
+      "git_blob": "4fa4d0d831adf9a278bda9b0aa43db34ef3936e5"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/src/articulated_body/articulated_body.cpp",
+      "git_blob": "7e1c53920b33a6f99d0968f7fb87b1b5a5172649"
     }
   ]
 }
