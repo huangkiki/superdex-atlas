@@ -1,0 +1,55 @@
+{
+  "upstream": "facebookresearch/project_superdex",
+  "commit": "1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6",
+  "scope": "source study; no simulation experiments or performance claims",
+  "files": [
+    {
+      "path": "README.md",
+      "git_blob": "564199223ba8577b3bff655aa7f6599eb5a71339"
+    },
+    {
+      "path": "superdex_physics/examples/example_rigid_bodies.py",
+      "git_blob": "e52723cd6609140195819a7bc2c763c5340665e3"
+    },
+    {
+      "path": "superdex_physics/examples/example_state_capture_restore.py",
+      "git_blob": "eb90bedcdf741067adc36be1412547907771a3fa"
+    },
+    {
+      "path": "superdex_robotics/src/controllers/controller_basic_jsc_pd.cpp",
+      "git_blob": "b07944ad7308fb0e1ed5e1fe5f16fee861229672"
+    },
+    {
+      "path": "superdex_robotics/src/sensors/camera_sensor.cpp",
+      "git_blob": "f9118617c4a722e68d68b2f038731c419a86ca90"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_scene.cpp",
+      "git_blob": "94d831a72a213f1669334179ca0682c215298bd8"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/include/mochi_physics/cpp_api/mochi_scene.h",
+      "git_blob": "064b318255f513601e3d01c6d276ec0ca405b3e7"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_integration.cpp",
+      "git_blob": "511b40e8edce22d06844a78bb9787ade28aefdc8"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/integration/integration_params.h",
+      "git_blob": "8ea289d22d5c23711747e496c4f705d0508db960"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/solvers/newton_solver_params.h",
+      "git_blob": "d3c9fcef1a4e548c6dc7283ef8fbfcf9826c416c"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/src/solvers/newton_solver.cpp",
+      "git_blob": "a88b38af34532a62c6928c1695b1722aead95245"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/contact/contact_params.h",
+      "git_blob": "1bdf41ca40da3c3bdf1dc67261cf0aa872e0286a"
+    }
+  ]
+}

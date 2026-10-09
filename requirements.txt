@@ -1,0 +1,3 @@
+# Candidate engine packages for later API lessons; not a validated environment lock.
+superdex-physics==1.0.0
+superdex-physics-fp64==1.0.0
