@@ -594,6 +594,142 @@
     {
       "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_scene_recorder.h",
       "git_blob": "da64e25124f637c1a0377c74b636afdc03fa2a73"
+    },
+    {
+      "path": "superdex_physics/examples/example_articulations_soft_skinned_double_pendulum.py",
+      "git_blob": "ac468fa3a261bb3b2796963ae3e1cc037b8f90f6"
+    },
+    {
+      "path": "superdex_physics/examples/example_mass_on_rod_spring.py",
+      "git_blob": "15d6b9ea47c1a69b10fd8abbbfa0519f9d2a994f"
+    },
+    {
+      "path": "superdex_physics/examples/example_soft_duck.py",
+      "git_blob": "1554c4f77fbd9c90cc10f92ae369be22ba948135"
+    },
+    {
+      "path": "superdex_physics/examples/example_tendon_comparison.py",
+      "git_blob": "24709a0f7c42b0d6686ede782825e433fd9a282a"
+    },
+    {
+      "path": "superdex_physics/examples/example_tshirt_on_plane.py",
+      "git_blob": "cef03830ae827596a44f905b2409d94c55ebf59a"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/materials/batched_materials.h",
+      "git_blob": "e66c0e91c23c911124a4994002f1440e2f954bbb"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/materials/linear_elastic_params.h",
+      "git_blob": "a414a42afda1d17fa4d9dd4491530f4cf3bd2d90"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/materials/smith_neo_hookean_params.h",
+      "git_blob": "5e4833f1e6582d411673e04b0cdfa2598933ff56"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/mochi_config.h",
+      "git_blob": "1ab4eb961257225a33defcc616a4d0ea4422ebf7"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/src/materials/batched_linear_elastic.cpp",
+      "git_blob": "2503e0bda919c9e461c9e7f2871e149325613ebc"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/src/materials/batched_smith_neo_hookean.cpp",
+      "git_blob": "d56e502bfa458f406c8210df8997cea2dc0f00fb"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/src/materials/material_params_utils.cpp",
+      "git_blob": "0c7f25d065f37e6cfc77691ee88d5fcd6f20ddb2"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/CMakeLists.txt",
+      "git_blob": "028ba068ed594acf3b944c71b03761889284784d"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/include/mochi_physics/mochi_physics_config.h",
+      "git_blob": "7b9784f15bf6fcd190a3dc0a38a373a2d05756a4"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/private/diffsim/include/mochi_physics/diffsim/mochi_diffsim.h",
+      "git_blob": "f891545a4da40ca946f5ee6d246696ba7c58a279"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/private/diffsim/include/mochi_physics/diffsim/mochi_diffsim_types.h",
+      "git_blob": "27b20acbb9bc4bc0e4543d2c21098c3736958865"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/private/diffsim/test/mochi_differentiable_functions_test.cpp",
+      "git_blob": "5ed03870b6b6df078b090b3cec7d2f63f6393361"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/private/diffsim/test/mochi_step_jacobian_test.cpp",
+      "git_blob": "946a5b334402e8dca6a3da7190c1ba153ed0aff3"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_deformable.cpp",
+      "git_blob": "f04af54d1eea40a565d3142ab3c72492cbc610ae"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_differentiable.cpp",
+      "git_blob": "5dc820413844622cb4ece420f6e5d783839748e9"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_differentiable.h",
+      "git_blob": "f7d2b7b7ee489a251e9829d424373552fdb5009e"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_differentiable_contact.cpp",
+      "git_blob": "2afddde56c95704da960abd6297995f743482ccf"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_rod.cpp",
+      "git_blob": "c2a6fdd88ac229274b33453fa4f128e7b1326093"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_shell.cpp",
+      "git_blob": "e9a1197e842495c8924dc1b54cc5610ee2576334"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_shell_init.cpp",
+      "git_blob": "60582a2a43c1947db56be41857f09b1b0b9a09fc"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_soft_init.cpp",
+      "git_blob": "a0559e7fe6abc4f0d30ebb5a76e9d7b02dec4367"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_soft_rom_components.h",
+      "git_blob": "7de73b91f996c160c0106ade7bda3a4e6d288589"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_soft_rom_init.cpp",
+      "git_blob": "c79daf1a37b7e8fa371b6931034ddc45b601d952"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_soft_rom_systems.cpp",
+      "git_blob": "e26e47dddd01d0b3bd19569dc9985194db79418e"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_soft_skinned.cpp",
+      "git_blob": "94f04c15b562777b36887982a12f41c3ed280383"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/materials/material_params.h",
+      "git_blob": "b0708a7eb3dcf26d878d58535795ac53d083f6c7"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/materials/batched_smith_neo_hookean.h",
+      "git_blob": "5ddd85c613661bacf1430dc81b4b497a239f9790"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_soft.cpp",
+      "git_blob": "aa02ffb3a43505e5ef4d0bbaee4ba4817eb2c813"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/element_operations/fem_stress.h",
+      "git_blob": "ddec1ebd107775ec2bef52b6f2c47edfb09283fb"
     }
   ],
   "external_sources": [

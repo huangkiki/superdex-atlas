@@ -1,6 +1,6 @@
 # SuperDex 从对象到源码
 
-阅读基线：`1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6`，来源为官方固定源码。本篇是对象与关键机制导读，[E1 建模、状态与时间专题](modeling-state-time.md)、[E2 控制与机器人](control-robotics.md)、[E3 接触与求解器](contact-solvers-forces.md)、[E4 传感器与渲染](sensors-rendering.md)、[E5 批量与学习数据](batch-learning-data.md)已展开，特色/可微扩展专题仍在开发；本轮仅做源码/文档核对，没有运行仿真实验。
+阅读基线：`1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6`，来源为官方固定源码。本篇是对象与关键机制导读，[E1 建模、状态与时间专题](modeling-state-time.md)、[E2 控制与机器人](control-robotics.md)、[E3 接触与求解器](contact-solvers-forces.md)、[E4 传感器与渲染](sensors-rendering.md)、[E5 批量与学习数据](batch-learning-data.md)、[E6 特色Actor与可微扩展](extensions-boundaries.md)已展开，A0及最终双路线审校仍待E7；本轮仅做源码/文档核对，没有运行仿真实验。
 
 ## 1. 先分清产品层
 
@@ -36,8 +36,8 @@ FP64 是独立构建/安装身份；`SUPERDEX_PRECISION=fp64` 应在导入前设
 
 ## 6. 传感器、扩展与下一步
 
-[camera sensor](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_robotics/src/sensors/camera_sensor.cpp) 只保存机器人层相机参数；它不在物理循环产生图像。[E4](sensors-rendering.md)分别追踪物理查询、CameraSensor 元数据与 Polyscope/Mochi/UE 宿主图像，记录坐标、实际返回格式、帧延迟与能力缺口。[E5](batch-learning-data.md)进一步展开 Lab 的进程/串行批量、共享 Scene 快照、Gymnasium seed/autoreset、CUDA 数据拷贝与记录回放。可微内部及复杂几何等特色专题仍按实际后端支持在 E6 展开，不从一个接口名称推断性能或所有能力均兼容。
+[camera sensor](https://github.com/facebookresearch/project_superdex/blob/1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6/superdex_robotics/src/sensors/camera_sensor.cpp) 只保存机器人层相机参数；它不在物理循环产生图像。[E4](sensors-rendering.md)分别追踪物理查询、CameraSensor 元数据与 Polyscope/Mochi/UE 宿主图像，记录坐标、实际返回格式、帧延迟与能力缺口。[E5](batch-learning-data.md)进一步展开 Lab 的进程/串行批量、共享 Scene 快照、Gymnasium seed/autoreset、CUDA 数据拷贝与记录回放。[E6](extensions-boundaries.md)已按实际接口/构建支持展开软体/壳/杆/ROM、可微装配及兼容边界，不从一个接口名称推断性能或所有能力均兼容。
 
-阅读自查：能否解释 Scene 与 actor 的所有权、FP64 的构建身份、一个 PD 输出的去向、一个接触参数的量纲及积分/求解三层关系？已交付专题与仍待开发的可微及特色扩展内容见[课程路线](curriculum.md)。
+阅读自查：能否解释 Scene 与 actor 的所有权、FP64 的构建身份、一个 PD 输出的去向、一个接触参数的量纲及积分/求解三层关系？已交付专题与仍待E7完成的A0及最终审校见[课程路线](curriculum.md)。
 
 实验最终复用 [DexLab](https://github.com/huangkiki/Dexlab) 并保留原版本、配置和工况；当前不另建实验批次或评分器。

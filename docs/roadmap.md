@@ -10,7 +10,7 @@
 | E3 | 接触、求解器与力观测源码专题 | E1 | [专题与源码核对已完成](contact-solvers-forces.md)；[运行未验收](validation-e3.md) |
 | E4 | 传感器、渲染与可视化专题 | E1 | [专题与源码核对已完成](sensors-rendering.md)；[运行未验收](validation-e4.md) |
 | E5 | 批量、学习接口与数据专题 | E2、E4 | [专题与源码核对已完成](batch-learning-data.md)；[运行未验收](validation-e5.md) |
-| E6 | 引擎特色、扩展与能力边界专题 | E3 | 待开发 |
+| E6 | 引擎特色、扩展与能力边界专题 | E3 | [专题与源码核对已完成](extensions-boundaries.md)；[运行未验收](validation-e6.md) |
 | E7 | 双路线课程审校与 DexLab 复用入口 | E2–E6 | 待开发 |
 
 E0 交付的是导读与导航，不是所有专题。E1–E6 逐个展开目录中的知识点，E7 按完整课程契约审校。依赖必须以实际文档或合入提交核实，不能仅凭 Issue 关闭。
@@ -28,3 +28,5 @@ E3 交付后复盘：A4/B1–B5 的接触、积分、求解和力观测已形成
 E4 交付后复盘：A6 已讲清 CameraSensor 元数据、Physics 查询与三条图像宿主路径。Mochi RGBA8、Polyscope 实际四通道、UnrealCV 客户端/服务端边界、延迟/帧时点和资源生命周期均有固定源码证据；公开 depth/segmentation/tactile 缺口没有填入虚构 API。E5 的 E2/E4 知识先修已齐备，待本项实际合入后可优先推进批量/学习/数据专题；E6 同样已有 E3 先修，E7 仍待 E5/E6。未启动任何 native import、渲染或仿真。
 
 E5 交付后复盘：A8/A9 与 B6 的并行/设备拷贝/学习协议/记录扩展已完整展开。独立与共享 Scene、两级 seed、NEXT_STEP、Dict 排序、CUDA 往返、recorder 时间和不完整重建均有固定分支证据；Gymnasium 1.3.0 另固定来源，未把外部训练组件或原生求导混成统一接口。原生/训练/性能均未运行。下一项 E6 已具备 E3 先修，可展开特色 Actor、可微装配和兼容边界；E7 仍待 E6 与完整课程审校。本地完成和实际远端集成分别记录，由主任务复核后更新 Issue/Project。
+
+E6 交付后复盘：B4的可微内部、B6特色Actor/构建与绑定边界、B7两条字段到观测/梯度的综合源码链已展开。全step Jacobian的rigid-only限制、反向HVP有限差分、PCG/MINRES具体回退、skinning/ROM/DeepFlow限制均按实现而非名称判断；未执行原生或数值求导。E7在E2–E6实际合入后补A0安装身份专题、课程/例子总审校及DexLab已有证据复用索引，不新增实验/评分器。本地文档完成与远端发布分别核验。
