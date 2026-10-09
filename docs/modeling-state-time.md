@@ -154,7 +154,7 @@ SceneImpl::Step(h)
 | 快照为何包含部分字段 | `capture::CaptureState` | 属性标记驱动序列化，不是整个进程内存转储 |
 | Python 日志为何随步变化 | `PySpan` 与生成的 actor binding | 借用原始数组，复制与视图是不同操作 |
 
-链接：[Actor 实现][actor]、[组件][components]、[捕获实现][capture]、[绑定][binding]与 [Span][span]。E3 将从这些状态到非线性/线性系统继续追踪；当前尚未交付完整求解器数学章节。
+链接：[Actor 实现][actor]、[组件][components]、[捕获实现][capture]、[绑定][binding]与 [Span][span]。[E3 接触、求解器与力观测](contact-solvers-forces.md)从这些状态继续追踪非线性/线性系统、残差和观测，柔体材料与可微实现细节留 E6。
 
 ## 8. B4：时间离散的最低必要知识
 

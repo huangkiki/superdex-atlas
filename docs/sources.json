@@ -250,6 +250,114 @@
     {
       "path": "superdex_physics/libraries/mochi/mochi_core/src/articulated_body/articulated_body.cpp",
       "git_blob": "7e1c53920b33a6f99d0968f7fb87b1b5a5172649"
+    },
+    {
+      "path": "superdex_physics/examples/example_contact_filtering.py",
+      "git_blob": "2e40d5632831a63b50483f0875943455949c478e"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/contact/contact_params_inl.h",
+      "git_blob": "8c188abe9fdc2e3df0c3db02eb1397b9720b5d9c"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/contact/contact_types.h",
+      "git_blob": "f84461bc6a7a19bcb3d2ab8a29fb5e3ca0f35efd"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/contact/contact_utils.h",
+      "git_blob": "4fbf0d57f3f3a36ddbb253b91adc345ce7bfca7d"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/solvers/krylov_solver.h",
+      "git_blob": "b592686b9f3966f442f69bf181940bb6276b22a6"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/solvers/line_search.h",
+      "git_blob": "5b796ea0ab17b9f34dad4fa650eaf4154b2c5a82"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/solvers/linear_solver.h",
+      "git_blob": "8bc38c390381501b207c5bd2f6ef4ac7caac213a"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/solvers/linear_solver_params.h",
+      "git_blob": "98eb67adf96aa1b36161c3d05b08717bbe6e629f"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/solvers/newton_solver_status.h",
+      "git_blob": "6a27ebc2c4d3ec107f22b248ba86879a446c8133"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/solvers/nonlinear_solver_params.h",
+      "git_blob": "d64a5f3d747004afcab7fe4c48134c7568f387bf"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/solvers/snle_problem_inl.h",
+      "git_blob": "fa3fca5e1b203c6bdd020da4687f49256636a1a0"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/utils/activations.h",
+      "git_blob": "b263d192d151ce7411eb66c329475637ea82fbb9"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/utils/eval_params.h",
+      "git_blob": "8fddd931bee5c329534c339e01d2eab191fc3025"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/utils/eval_params_inl.h",
+      "git_blob": "299815535be4df37cd919162035e76c4df12955a"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/include/mochi_core/utils/rigid_body_assembly.h",
+      "git_blob": "684af025401534e7e5245cc96a6342d07d50bd30"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_core/src/contact/contact_utils.cpp",
+      "git_blob": "6ba8f3f1a999cfc462ae46b02244ca1f956614ab"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_actor_convergence.cpp",
+      "git_blob": "ce454ee8bb8d5674182c89e41ff9ed3216892fdd"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_contact.cpp",
+      "git_blob": "eefde8aed8caac1af5afbc2538009a73247064c3"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_contact.h",
+      "git_blob": "6d7546c53fc62bbbdf1f9c0f7ecce09c8e157d39"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_contact_filter.cpp",
+      "git_blob": "e368ff988fbf4960445b4f4dfe0109f0f1bc7322"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_contact_filter.h",
+      "git_blob": "677ac87d958e0ead04814a403888114116906e34"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_island.cpp",
+      "git_blob": "f16deffee2559532e8f89db07be2a8594c5fa464"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_point_cloud_contact.cpp",
+      "git_blob": "6bd816561a40675e708bffbf4659bdb52a1eac56"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_query.cpp",
+      "git_blob": "07c4ec0cc51212f4033979619516cd55a9be83e4"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_rigid.cpp",
+      "git_blob": "8fc31eb1e55c8481ffdf1129c2b00ea1149cdf38"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_solve.cpp",
+      "git_blob": "3c6adcd3d2c3bf765015ad5c4f1a40c107b90285"
+    },
+    {
+      "path": "superdex_physics/libraries/mochi/mochi_physics/src/mochi_step.cpp",
+      "git_blob": "fa300d5351d9b75c2998bb4da0f072ad1a00a049"
     }
   ]
 }

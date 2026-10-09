@@ -4,17 +4,18 @@
 
 [English](README.en.md) · [入门导读](docs/guide.md) · [完整课程路线](docs/curriculum.md) · [源码地图](docs/source-map.md) · [版本](docs/versions.md) · [开发任务](docs/roadmap.md) · [六仓总看板](https://github.com/users/huangkiki/projects/2) · [系列学习首页](https://github.com/huangkiki/sim-atlas)
 
-这是 **Sim Atlas · 仿真图谱** 的独立社区学习仓库，重点覆盖 Physics/Robotics/Studio 的边界、Scene/Actor、接触几何、精度与可微求解。
+这是 **[Sim Atlas · 仿真图谱](https://github.com/huangkiki/sim-atlas)** 的独立社区学习仓库，重点覆盖 Physics/Robotics/Studio 的边界、Scene/Actor、接触几何、精度与可微求解。
 
-提供两条完整路线：**A 应用路线**从对象与建模走向控制、机器人、传感器、学习接口与数据；**B 原理与源码路线**解释动力学、接触模型、求解器、积分、观测及扩展。当前已提供首篇导读、[E1 建模/坐标/状态/时间专题](docs/modeling-state-time.md)、[E2 驱动/机器人/任务接口专题](docs/control-robotics.md)和固定版本源码地图；接触/求解、感知、数据及扩展专题仍在开发。
+提供两条完整路线：**A 应用路线**从对象与建模走向控制、机器人、传感器、学习接口与数据；**B 原理与源码路线**解释动力学、接触模型、求解器、积分、观测及扩展。当前已提供首篇导读、[E1 建模/坐标/状态/时间专题](docs/modeling-state-time.md)、[E2 驱动/机器人/任务接口专题](docs/control-robotics.md)、[E3 接触/求解器/力观测专题](docs/contact-solvers-forces.md)和固定版本源码地图；感知、数据及扩展专题仍在开发。
 
 ## 从这里开始
 
 1. 阅读[导读](docs/guide.md)，建立对象与调用关系。
 2. 阅读[E1 专题](docs/modeling-state-time.md)，理解原生坐标、惯量、URDF 限制、状态所有权、快照和积分时间；[验证范围](docs/validation-e1.md)单独记录。
 3. 阅读[E2 专题](docs/control-robotics.md)，区分 JSC/OSC、隐式 pose tracking、IK、驱动力限额及应用任务调度。
-4. 跟随[源码地图](docs/source-map.md)，在固定提交中核对原生字段、配置和执行路径。
-5. 按[课程路线](docs/curriculum.md)选择应用或原理专题；需要环境时看[安装说明](docs/installation.md)。
+4. 阅读[E3 专题](docs/contact-solvers-forces.md)，核对材料组合、隐式积分、残差终止与接触力采样；[验证边界](docs/validation-e3.md)明确区分源码和运行证据。
+5. 跟随[源码地图](docs/source-map.md)，在固定提交中核对原生字段、配置和执行路径。
+6. 按[课程路线](docs/curriculum.md)选择应用或原理专题；需要环境时看[安装说明](docs/installation.md)。
 
 当前先完成引擎知识体系与源码课程。最小 API 片段服务于理解，运行状态逐项注明；本轮没有新增仿真实验、训练、基准或独立评分器。后续实验复用 [DexLab](https://github.com/huangkiki/Dexlab) 的版本、配置和工况记录。
 
