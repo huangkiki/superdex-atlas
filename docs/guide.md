@@ -1,5 +1,7 @@
 # SuperDex 从对象到源码
 
+先读 [solver 配置解读](solver-reading-guide.md)，将 DexLab 标签映射到外层、内层、摩擦、柔性实现和精度，再沿本篇进入对象与原生 API。
+
 阅读基线：`1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6`，来源为官方固定源码。本篇是对象与关键机制导读，[E1 建模、状态与时间专题](modeling-state-time.md)、[E2 控制与机器人](control-robotics.md)、[E3 接触与求解器](contact-solvers-forces.md)、[E4 传感器与渲染](sensors-rendering.md)、[E5 批量与学习数据](batch-learning-data.md)、[E6 特色Actor与可微扩展](extensions-boundaries.md)已展开，A0及最终双路线审校仍待E7；本轮仅做源码/文档核对，没有运行仿真实验。
 
 ## 1. 先分清产品层

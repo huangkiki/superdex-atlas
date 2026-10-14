@@ -1,5 +1,7 @@
 # SuperDex autodev 路线
 
+当前执行 [Learning 改名与 solver 教程](https://github.com/huangkiki/sim-learning/issues/1)：本仓更新现行品牌/导航，交付 [SuperDex 配置解读](solver-reading-guide.md)与[验证记录](validation-solver-reading.md)。E7 保留独立待办且暂停，本次不启动原生运行；以下 E1–E6 复盘保留历史顺序，不作为当前调度指令。
+
 一个阶段对应一个可恢复的 GitHub Issue；总看板统一管理六仓，仓库保留本引擎的原生设计。先查同题 Issue/PR 和实际合入状态，再继续工作。
 
 | 阶段 | 交付切片 | 依赖 | 状态 |
@@ -11,7 +13,7 @@
 | E4 | 传感器、渲染与可视化专题 | E1 | [专题与源码核对已完成](sensors-rendering.md)；[运行未验收](validation-e4.md) |
 | E5 | 批量、学习接口与数据专题 | E2、E4 | [专题与源码核对已完成](batch-learning-data.md)；[运行未验收](validation-e5.md) |
 | E6 | 引擎特色、扩展与能力边界专题 | E3 | [专题与源码核对已完成](extensions-boundaries.md)；[运行未验收](validation-e6.md) |
-| E7 | 双路线课程审校与 DexLab 复用入口 | E2–E6 | 待开发 |
+| E7 | 双路线课程审校与 DexLab 复用入口 | E2–E6 | 暂停；本次不启动 |
 
 E0 交付的是导读与导航，不是所有专题。E1–E6 逐个展开目录中的知识点，E7 按完整课程契约审校。依赖必须以实际文档或合入提交核实，不能仅凭 Issue 关闭。
 
