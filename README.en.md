@@ -1,10 +1,12 @@
-# SuperDex Atlas
+# SuperDex Learning
 
 Understand SuperDex through native APIs, physics concepts and versioned source code.
 
-[中文](README.md) · [Introductory guide](docs/guide.md) · [Curriculum](docs/curriculum.md) · [Source map](docs/source-map.md) · [Versions](docs/versions.md) · [Roadmap](docs/roadmap.md) · [Project tracker](https://github.com/users/huangkiki/projects/2) · [Series home](https://github.com/huangkiki/sim-atlas)
+[中文](README.md) · [Introductory guide](docs/guide.md) · [Solver reading guide](docs/solver-reading-guide.md) · [Curriculum](docs/curriculum.md) · [Source map](docs/source-map.md) · [Versions](docs/versions.md) · [Roadmap](docs/roadmap.md) · [Project tracker](https://github.com/users/huangkiki/projects/2) · [Series home](https://github.com/huangkiki/sim-learning)
 
-Part of **[Sim Atlas](https://github.com/huangkiki/sim-atlas)**, an independent community learning series with two complete planned tracks: applications (modeling, control, robotics, sensing and data) and principles/source (dynamics, contact, solvers, integration and extensions).
+Part of **[Sim Learning](https://github.com/huangkiki/sim-learning)**, an independent community learning series with two complete planned tracks: applications (modeling, control, robotics, sensing and data) and principles/source (dynamics, contact, solvers, integration and extensions).
+
+The new [solver reading guide](docs/solver-reading-guide.md) explains every SuperDex label registered in the frozen DexLab taxonomy: outer Newton/BFGS/SR1, all 13 inner linear options, AUTO selection, smooth friction, experimental shells and FP64. It distinguishes requested settings, readback and executed branches, including the assembly-period=1 Newton-equivalence and the recorded CUDA wheel rejection. Chinese explanations, an English summary and answered diagnostic exercises are source/static checked only; see [validation](docs/validation-solver-reading.md). E7 installation and full-course runtime review remain paused.
 
 The initial guide, pinned source map, and [E1 modeling, coordinates, state and time chapter](docs/modeling-state-time.md) are available in Chinese. E1 covers native frames/inertia, URDF import limits, state dimensions and ownership, snapshots, stepping and integration foundations; it includes answered reading exercises and an unexecuted native API snippet. See [validation and limitations](docs/validation-e1.md). A1/A2 are documented; B0/B4 foundations are documented, with dynamics assembly and numerical solving developed further in E3 below.
 

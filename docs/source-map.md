@@ -1,4 +1,4 @@
-# superdex-atlas 固定版本源码入口
+# SuperDex Learning 固定版本源码入口
 
 阅读基线：`1d7150946fa3f3d3fb09c2bff07eaa138cbfdee6`。以下入口已核对官方 Git 树与文件内容身份；不是全仓审查或运行验收记录。
 

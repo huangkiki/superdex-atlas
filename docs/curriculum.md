@@ -1,5 +1,7 @@
 # SuperDex 两条学习路线
 
+新增[solver 配置解读](solver-reading-guide.md)面向有 VLA/WAM/RL 经验的工程师与硕博，先从 DexLab 的一行配置进入本引擎原生实现，再按需深入 E3/E6；[静态与来源验收](validation-solver-reading.md)单独记录。原生运行与 E7 仍暂停。
+
 [首篇导读](guide.md)已经建立对象关系和核心入口；它不代表下面全部专题已经完成。[源码地图](source-map.md)提供固定提交入口。
 
 应用路线无需先学求解器源码；原理路线建议先理解 A0–A4，并具备线性代数和基础动力学知识。两条路线都完整规划，当前以讲解、源码与最小 API 片段为交付物。已完成的 E1 范围见[建模、状态与时间](modeling-state-time.md)；源码审查与运行状态见[验证记录](validation-e1.md)。E2 见[驱动、机器人与任务接口](control-robotics.md)，不把应用状态机写成内核能力。E3 见[接触、求解器与力观测](contact-solvers-forces.md)，覆盖接触材料、装配/积分/求解链和原生力查询。E4 见[传感器、渲染与可视化](sensors-rendering.md)，分清原生查询、相机元数据、宿主图像及实际能力缺口。E5 见[批量、学习接口与数据](batch-learning-data.md)，完整展开共享状态、设备/进程拷贝、学习协议、随机化与可复现边界；E6 见[特色Actor、可微求解与扩展边界](extensions-boundaries.md)，展开本构/降阶/构建门限、adjoint装配、Lie参数化与综合源码追踪；A0和双路线最终审校仍由E7完成。
